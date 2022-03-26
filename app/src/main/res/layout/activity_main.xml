@@ -1,110 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fundo_app"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:drawableTop="@drawable/ic_seta_baixo"
-        android:text="House of Cards"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<androidx.constraintlayout.widget.ConstraintLayout
+android:background="@color/fundo_app"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.35" />
+<TextView
+    android:id="@+id/textView4"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    android:text="03:45"
+    android:textColor="@android:color/darker_gray"
+    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.16" />
+<TextView
+    android:id="@+id/textView5"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    android:text="34:33"
+    android:textColor="@android:color/darker_gray"
+    app:layout_constraintStart_toStartOf="@+id/guideline5"
+    app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.65" />
+<TextView
+    android:drawableTop="@drawable/ic_seta_baixo"
+    android:id="@+id/textView"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    android:text="House of Cards"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.503"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.84" />
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline2"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.35" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="S1:E2"
-        android:textColor="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline3"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.16" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_baseline_message_24" />
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline4"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.65" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_baseline_volume_up_24" />
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline5"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.84" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_baseline_star_24" />
+<TextView
+    android:id="@+id/textView2"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    android:text="S1:E2"
+    android:textColor="@android:color/darker_gray"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_baseline_content_copy_24" />
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    app:srcCompat="@drawable/ic_baseline_message_24" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="56dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/house" />
+<ImageView
+    android:id="@+id/imageView3"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    app:layout_constraintStart_toStartOf="@+id/guideline2"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    app:srcCompat="@drawable/ic_baseline_volume_up_24" />
+
+<ImageView
+    android:id="@+id/imageView6"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    app:srcCompat="@drawable/ic_baseline_star_24" />
+
+<ImageView
+    android:id="@+id/imageView7"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    app:layout_constraintEnd_toStartOf="@+id/guideline5"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    app:srcCompat="@drawable/ic_baseline_content_copy_24" />
+
+<ImageView
+    android:id="@+id/imageView9"
+    android:layout_height="300dp"
+    android:layout_marginTop="56dp"
+    android:layout_width="0dp"
+    android:scaleType="centerCrop"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    app:srcCompat="@drawable/house" />
+
+<SeekBar
+    android:id="@+id/seekBar"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="0dp"
+    app:layout_constraintEnd_toStartOf="@+id/guideline5"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+<ImageView
+    android:id="@+id/imageView8"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    app:layout_constraintEnd_toStartOf="@+id/guideline2"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/seekBar"
+    app:srcCompat="@drawable/ic_baseline_settings_backup_restore_24" />
+
+<ImageView
+    android:id="@+id/imageView10"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+    app:layout_constraintStart_toStartOf="@+id/guideline2"
+    app:layout_constraintTop_toBottomOf="@+id/seekBar"
+    app:srcCompat="@drawable/ic_baseline_pause_24" />
+
+<ImageView
+    android:id="@+id/imageView12"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    app:layout_constraintEnd_toStartOf="@+id/guideline5"
+    app:layout_constraintStart_toStartOf="@+id/guideline4"
+    app:layout_constraintTop_toBottomOf="@+id/seekBar"
+    app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
